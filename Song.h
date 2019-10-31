@@ -36,7 +36,7 @@ class Song{
         int getSize() const{
             return size;
         }
-        void setSize(const int &size){
+        void setSize(int size){
             this->size = size;
         }
         bool operator >(Song const &rhs);

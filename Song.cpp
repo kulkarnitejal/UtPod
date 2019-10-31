@@ -5,9 +5,9 @@
 using namespace std;
 
 Song::Song(){
-    artist = "";
-    title = "";
-    size = 0;
+    artist = "blank";                                       //cannot be empty
+    title = "blank";
+    size = 1;                                               //size must be greater than 0
 };
 
 Song::Song(string artist, string title, int size){
@@ -28,7 +28,7 @@ bool Song::operator <(Song const &rhs){
 }
 
 bool Song::operator ==(Song const &rhs){
-    return(artist == rhs.artist || title == rhs.title || size == rhs.size);
+    return(artist == rhs.artist && title == rhs.title && size == rhs.size);
 
 }
 
