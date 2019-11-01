@@ -24,12 +24,43 @@ int main(int argc, char *argv[])
 {
     UtPod t;
 
-    Song s1("Beatles", "Hey Jude1", 4);
+    Song s1("Beatles", "hey Jude1", 4);
     int result = t.addSong(s1);
     cout << "result = " << result << endl;
 
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
+    Song s2("Beatles", "hey Jude1", 5);
+    result = t.addSong(s2);
+    cout << "result = " << result << endl;
+
+    Song s3("Beatles", "hey Jude1", 6);
+    result = t.addSong(s3);
+    cout << "result = " << result << endl;
+
+    t.showSongList();
+
+    t.sortSongList();
+
+    t.showSongList();
+
+    t.clearMemory();
+    cout << "No items pls";
+    t.showSongList();
+
+//    cout << t.getRemainingMemory();
+//
+//
+//    result = t.removeSong(s1);
+//
+//    cout << "delete result = " << result << endl;
+//
+//    t.showSongList();
+//
+//    cout << t.getRemainingMemory();
+
+
+
+
+
 /*
     t.showSongList();
 
