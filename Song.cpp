@@ -33,5 +33,5 @@ bool Song::operator ==(Song const &rhs){
 }
 
 Song::~Song(){
-    cout << "debug - in destructor for " << artist << title << endl;
+    //cout << "debug - in destructor for " << artist << title << endl;
 }
